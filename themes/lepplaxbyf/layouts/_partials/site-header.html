@@ -1,0 +1,22 @@
+{{ $bookingURL := i18n "nav_booking_path" | relLangURL }}
+{{ $galleryURL := i18n "nav_gallery_path" | relLangURL }}
+<header class="site-header" id="top">
+  <div class="site-header-inner">
+    <a class="wordmark" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
+      <span class="wordmark-mark" aria-hidden="true">L</span>
+      <span class="wordmark-copy">
+        <span class="wordmark-name">{{ .Site.Title }}</span>
+        <span class="wordmark-place">{{ i18n "brand_label" }}</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="{{ i18n "nav_menu" }}">
+      <a href="{{ .Site.Home.RelPermalink }}">{{ i18n "nav_about" }}</a>
+      <a href="{{ $bookingURL }}">{{ i18n "nav_booking" }}</a>
+      <a href="{{ $galleryURL }}">{{ i18n "nav_gallery" }}</a>
+      <a class="nav-contact" href="{{ .Site.Home.RelPermalink }}#contact">{{ i18n "nav_contact" }}</a>
+      {{ range .Translations }}
+        <a class="language-link" href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}">{{ i18n "language_switch" }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

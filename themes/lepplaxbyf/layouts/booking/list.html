@@ -1,0 +1,47 @@
+{{ define "title" }}{{ i18n "booking_page_title" }} | {{ partial "site-title.html" . }}{{ end }}
+
+{{ define "main" }}
+  <section class="subpage-hero section-wrap">
+    <p class="eyebrow"><span class="eyebrow-line"></span>{{ i18n "booking_eyebrow" }}</p>
+    <h1>{{ .Title }}</h1>
+    <p>{{ i18n "booking_intro" }}</p>
+  </section>
+
+  <section class="how-to-book section-wrap">
+    <div class="how-to-book-card">
+      <div class="how-to-book-copy">
+        <h2>{{ i18n "howto_title" }}</h2>
+        <ol>
+          <li>{{ i18n "howto_step1" }}</li>
+          <li>{{ i18n "howto_step2" }}</li>
+          <li>{{ i18n "howto_step3" }}</li>
+        </ol>
+      </div>
+      <div class="how-to-book-action">
+        <span class="how-to-book-name">{{ i18n "contact_name" }}</span>
+        <a class="how-to-book-phone" href="tel:+358504066189">{{ i18n "contact_phone" }}</a>
+        <a class="button button-light" href="tel:+358504066189">{{ i18n "contact_call" }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section section-wrap">
+    <div class="booking-heading">
+      <div>
+        <h2>{{ i18n "booking_calendar_title" }}</h2>
+        <p>{{ i18n "booking_calendar_note" }}</p>
+      </div>
+      <a class="button button-primary" href="https://www.google.com/calendar/embed?color=%239fe1e7&amp;embed_style=WyJhdDplbWI6c3QiLCIjZTBlMGUwIiwiI2VkZWRlZCIsIiM0MTg0ZjMiLCJyb2JvdG8iLCIjNjM2MzYzIiw1MDAsIiNmZmYiXQo&amp;eopt=0&amp;mode=month&amp;showCalendars=1&amp;showPrint=0&amp;showTitle=0&amp;showTz=0&amp;src=lepplaxbyf%40gmail.com" target="_blank" rel="noopener noreferrer">
+        {{ i18n "booking_open_calendar" }} <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <div class="booking-calendar">
+      <iframe
+        src="https://www.google.com/calendar/embed?color=%239fe1e7&amp;embed_style=WyJhdDplbWI6c3QiLCIjZTBlMGUwIiwiI2VkZWRlZCIsIiM0MTg0ZjMiLCJyb2JvdG8iLCIjNjM2MzYzIiw1MDAsIiNmZmYiXQo&amp;eopt=0&amp;mode=month&amp;showCalendars=1&amp;showPrint=0&amp;showTitle=0&amp;showTz=0&amp;src=lepplaxbyf%40gmail.com"
+        title="{{ i18n "booking_calendar_title" }}"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,7 @@
+name = "lepplaxbyf"
+license = "MIT"
+description = "Theme for the Lepplax samlingshus website."
+
+[original]
+name = "Ananke"
+homepage = "https://github.com/gohugo-ananke/ananke"

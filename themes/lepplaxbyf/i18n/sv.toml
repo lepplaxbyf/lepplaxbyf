@@ -1,0 +1,272 @@
+[nav_menu]
+other = "Huvudmeny"
+
+[brand_label]
+other = "Lepplax byaförening rf"
+
+[nav_about]
+other = "Framsida"
+
+[nav_facilities]
+other = "Utrymmen"
+
+[nav_booking]
+other = "Bokningar & Kalender"
+
+[nav_booking_path]
+other = "bokningar/"
+
+[nav_gallery]
+other = "Bilder"
+
+[nav_gallery_path]
+other = "bilder/"
+
+[language_switch]
+other = "Suomeksi"
+
+[nav_contact]
+other = "Kontakt"
+
+[contact_name]
+other = "Gunborg Henriksson"
+
+[contact_phone]
+other = "050 406 6189"
+
+[contact_call]
+other = "Ring 050 406 6189"
+
+[contact_facebook]
+other = "Besök vår Facebook-sida"
+
+[booking_eyebrow]
+other = "KALENDER"
+
+[booking_intro]
+other = "I kalendern ser du bokningar och andra evenemang i samlingshuset. Vill du hyra huset, ring och fråga om lediga datum."
+
+[booking_calendar_title]
+other = "Kalender"
+
+[booking_calendar_note]
+other = "Kalendern visar bokningar och andra evenemang i Lepplax samlingshus."
+
+[booking_open_calendar]
+other = "Öppna kalendern i Google"
+
+[booking_contact_note]
+other = "Bokning sker per telefon. Kontakta Gunborg för att fråga om lediga datum:"
+
+[booking_page_title]
+other = "Bokningar & Kalender"
+
+[gallery_page_eyebrow]
+other = "EN TITT IN I HUSET"
+
+[gallery_page_intro]
+other = "Upptäck samlingshuset, från festsalen till omgivningen runt huset."
+
+[gallery_open_image]
+other = "Visa bilden i stort format"
+
+[gallery_lightbox_label]
+other = "Förstorad bild"
+
+[gallery_close_image]
+other = "Stäng bilden"
+
+[gallery_prev_image]
+other = "Föregående bild"
+
+[gallery_next_image]
+other = "Nästa bild"
+
+[gallery_hall]
+other = "Festsalen"
+
+[gallery_hall_alt]
+other = "Festsalen i Lepplax samlingshus med dukade bord och stolar"
+
+[gallery_entrance]
+other = "Huvudingången"
+
+[gallery_entrance_alt]
+other = "Tamburen och välkomnande entréutrymmen"
+
+[gallery_kitchen]
+other = "Köket"
+
+[gallery_kitchen_alt]
+other = "Köket i Lepplax samlingshus"
+
+[gallery_kitchen_note]
+other = "Mat- och kaffeservis samt dukar finns för cirka 200 personer."
+
+[gallery_upstairs]
+other = "Övervåningen"
+
+[gallery_upstairs_alt]
+other = "Rummen på samlingshusets övervåning"
+
+[gallery_upstairs_note]
+other = "Övervåningen har utrymme för 50 personer."
+
+[gallery_surroundings]
+other = "Omgivningen"
+
+[gallery_surroundings_alt]
+other = "Lepplax samlingshus, gården och omgivningen"
+
+[hero_eyebrow]
+other = "EN PLATS FÖR LIVETS FINA STUNDER"
+
+[hero_title]
+other = "En plats att samlas."
+
+[hero_description]
+other = "Bröllop, födelsedag eller en kväll med hela föreningen? Välkommen till Lepplax samlingshus – en varm och trivsam mötesplats i naturskön miljö."
+
+[hero_primary]
+other = "Fråga om lediga datum"
+
+[hero_secondary]
+other = "Upptäck huset"
+
+[hero_image_alt]
+other = "Lepplax samlingshus omgivet av grönska en sommardag"
+
+[photo_caption]
+other = "Välkommen till Lepplax"
+
+[facts_capacity_label]
+other = "personers mat- och kaffeservis"
+
+[facts_capacity_value]
+other = "ca 200"
+
+[facts_upstairs_label]
+other = "platser på övre våningen"
+
+[facts_accessible_label]
+other = "tillgängligt för alla"
+
+[about_eyebrow]
+other = "GEMENSKAP MED PLATS ATT VÄXA"
+
+[about_title]
+other = "Gör plats för det ni vill fira."
+
+[about_description]
+other = "Här finns utrymme för både de stora festdagarna och de små stunderna tillsammans. Huset är redo för att fyllas med människor, samtal och minnen."
+
+[feature_kitchen_title]
+other = "Ett kök som är redo"
+
+[feature_kitchen_description]
+other = "Ett modernt, välutrustat kök med mat- och kaffeservis samt dukar för omkring 200 personer."
+
+[feature_gather_title]
+other = "Gott om rum"
+
+[feature_gather_description]
+other = "På övre våningen ryms 50 personer. Huset passar för allt från bröllop till föreningsträffar."
+
+[feature_welcome_title]
+other = "Välkomnande för alla"
+
+[feature_welcome_description]
+other = "Samlingshuset är handikappanpassat. Vita stolsöverdrag finns också att hyra till festen."
+
+[feature_kitchen_alt]
+other = "Köket i Lepplax samlingshus"
+
+[feature_gather_alt]
+other = "Dukade bord i festsalen"
+
+[feature_welcome_alt]
+other = "Ljus och rymlig festsal"
+
+[gallery_eyebrow]
+other = "EN FÖRSTA TITT"
+
+[gallery_title]
+other = "Se er fest ta form."
+
+[gallery_description]
+other = "Ljusa rum, dukade bord och en miljö där gästerna kan känna sig hemma."
+
+[gallery_image_one_alt]
+other = "Dukade bord inför en festmiddag"
+
+[gallery_image_two_alt]
+other = "Festdukning med utsikt mot trädgården"
+
+[gallery_image_three_alt]
+other = "Den ljusa tamburen i Lepplax samlingshus"
+
+[cta_eyebrow]
+other = "ER NÄSTA SAMMANKOMST BÖRJAR HÄR"
+
+[cta_title]
+other = "Låt oss hitta rätt dag."
+
+[cta_description]
+other = "Bokning av samlingshuset sker per telefon. Kontakta Gunborg på 050 406 6189 för att fråga om lediga datum. För övriga frågor kan du skriva till oss på Facebook."
+
+[cta_button]
+other = "Skriv till oss på Facebook"
+
+[location_eyebrow]
+other = "HITTA HIT"
+
+[location_title]
+other = "Vi finns i Lepplax."
+
+[location_link]
+other = "Öppna i Google Maps"
+
+[location_map_title]
+other = "Karta som visar Lepplax samlingshus i Lepplax, Finland"
+
+[location_sign_alt]
+other = "Vägskylt för Lepplax samlingshus och seurantalo vid infarten"
+
+[location_sign_caption]
+other = "När du närmar dig – håll utkik efter den här skylten vid vägen."
+
+[footer_note]
+other = "Lepplax byaförening rf grundades 1989 och dess syfte är att stärka byagemenskapen för alla i byn. Byaföreningen äger och underhåller samlingshuset i byn."
+
+[footer_contact_label]
+other = "Bokning och frågor"
+
+[footer_top]
+other = "Till sidans början ↑"
+
+[nav_location]
+other = "Hitta hit"
+
+[footer_sitemap]
+other = "Sidkarta"
+
+[howto_title]
+other = "Så bokar du"
+
+[howto_step1]
+other = "Kolla i kalendern nedan vilka datum som är lediga."
+
+[howto_step2]
+other = "Ring Gunborg och berätta vilket datum du vill ha."
+
+[howto_step3]
+other = "Gunborg bekräftar bokningen och svarar på dina frågor."
+
+[more_images]
+other = "Fler bilder"
+
+[more_images_all]
+other = "Se alla bilder"
+
+[meta_owner]
+other = "Samlingshuset ägs av Lepplax byaförening rf."

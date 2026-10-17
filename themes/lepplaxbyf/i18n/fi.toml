@@ -1,0 +1,272 @@
+[nav_menu]
+other = "Päävalikko"
+
+[brand_label]
+other = "Lepplax byaförening rf"
+
+[nav_about]
+other = "Etusivu"
+
+[nav_facilities]
+other = "Tilat"
+
+[nav_booking]
+other = "Varaukset & kalenteri"
+
+[nav_booking_path]
+other = "kalenteri/"
+
+[nav_gallery]
+other = "Kuvia"
+
+[nav_gallery_path]
+other = "kuvat/"
+
+[language_switch]
+other = "På svenska"
+
+[nav_contact]
+other = "Yhteystiedot"
+
+[contact_name]
+other = "Gunborg Henriksson"
+
+[contact_phone]
+other = "050 406 6189"
+
+[contact_call]
+other = "Soita numeroon 050 406 6189"
+
+[contact_facebook]
+other = "Katso Facebook-sivumme"
+
+[booking_eyebrow]
+other = "KALENTERI"
+
+[booking_intro]
+other = "Kalenterista näet seurantalon varaukset ja muut tapahtumat. Jos haluat vuokrata talon, soita ja kysy vapaita päiviä."
+
+[booking_calendar_title]
+other = "Kalenteri"
+
+[booking_calendar_note]
+other = "Kalenterissa näkyvät Lepplaxin seurantalon varaukset ja muut tapahtumat."
+
+[booking_open_calendar]
+other = "Avaa kalenteri Googlessa"
+
+[booking_contact_note]
+other = "Varaukset tehdään puhelimitse. Kysy Gunborgilta vapaita päiviä:"
+
+[booking_page_title]
+other = "Varaukset & kalenteri"
+
+[gallery_page_eyebrow]
+other = "KURKISTA SISÄLLE"
+
+[gallery_page_intro]
+other = "Tutustu seurantaloon juhlasalista talon ympäristöön."
+
+[gallery_open_image]
+other = "Näytä kuva suurena"
+
+[gallery_lightbox_label]
+other = "Suurennettu kuva"
+
+[gallery_close_image]
+other = "Sulje kuva"
+
+[gallery_prev_image]
+other = "Edellinen kuva"
+
+[gallery_next_image]
+other = "Seuraava kuva"
+
+[gallery_hall]
+other = "Juhlasali"
+
+[gallery_hall_alt]
+other = "Lepplaxin seurantalon juhlasali katettuine pöytineen ja tuoleineen"
+
+[gallery_entrance]
+other = "Pääsisäänkäynti"
+
+[gallery_entrance_alt]
+other = "Seurantalon eteinen ja viihtyisät sisäänkäyntitilat"
+
+[gallery_kitchen]
+other = "Keittiö"
+
+[gallery_kitchen_alt]
+other = "Lepplaxin seurantalon keittiö"
+
+[gallery_kitchen_note]
+other = "Ruoka- ja kahviastiasto sekä pöytäliinat ovat noin 200 hengelle."
+
+[gallery_upstairs]
+other = "Yläkerta"
+
+[gallery_upstairs_alt]
+other = "Seurantalon yläkerran huoneet"
+
+[gallery_upstairs_note]
+other = "Yläkerrassa on tilat 50 henkilölle."
+
+[gallery_surroundings]
+other = "Ympäristö"
+
+[gallery_surroundings_alt]
+other = "Lepplaxin seurantalo, piha ja ympäristö"
+
+[hero_eyebrow]
+other = "TILA ELÄMÄN TÄRKEILLE HETKILLE"
+
+[hero_title]
+other = "Paikka yhteisille hetkille."
+
+[hero_description]
+other = "Häät, syntymäpäivät tai koko yhdistyksen tapaaminen? Tervetuloa Lepplaxin seurantalolle – viihtyisään kohtaamispaikkaan luonnonkauniissa ympäristössä."
+
+[hero_primary]
+other = "Kysy vapaita päiviä"
+
+[hero_secondary]
+other = "Tutustu taloon"
+
+[hero_image_alt]
+other = "Lepplaxin seurantalo kesäpäivänä vehreyden ympäröimänä"
+
+[photo_caption]
+other = "Tervetuloa Lepplaxiin"
+
+[facts_capacity_label]
+other = "henkilön ruoka- ja kahviastiasto"
+
+[facts_capacity_value]
+other = "noin 200"
+
+[facts_upstairs_label]
+other = "paikkaa yläkerrassa"
+
+[facts_accessible_label]
+other = "esteetön tila"
+
+[about_eyebrow]
+other = "YHDESSÄOLOON JA JUHLAAN"
+
+[about_title]
+other = "Tilaa kaikelle, mitä haluatte juhlia."
+
+[about_description]
+other = "Täällä on tilaa niin elämän suurille juhlapäiville kuin pienille yhteisille hetkille. Talo odottaa täyttyvänsä ihmisistä, keskusteluista ja muistoista."
+
+[feature_kitchen_title]
+other = "Keittiö on valmiina"
+
+[feature_kitchen_description]
+other = "Moderni ja hyvin varusteltu keittiö, ruoka- ja kahviastiasto sekä pöytäliinat noin 200 hengelle."
+
+[feature_gather_title]
+other = "Tilaa koko seurueelle"
+
+[feature_gather_description]
+other = "Yläkertaan mahtuu 50 henkilöä. Talo sopii niin häihin kuin yhdistysten tapaamisiinkin."
+
+[feature_welcome_title]
+other = "Esteetön ja kutsuva"
+
+[feature_welcome_description]
+other = "Seurantalo soveltuu myös liikuntarajoitteisille. Valkoisia tuolinpäällisiä voi vuokrata juhliin."
+
+[feature_kitchen_alt]
+other = "Lepplaxin seurantalon keittiö"
+
+[feature_gather_alt]
+other = "Juhlasalin katetut pöydät"
+
+[feature_welcome_alt]
+other = "Valoisa ja tilava juhlasali"
+
+[gallery_eyebrow]
+other = "PIENI KURKISTUS"
+
+[gallery_title]
+other = "Kuvitelkaa juhlanne täällä."
+
+[gallery_description]
+other = "Valoisat huoneet, katetut pöydät ja ympäristö, jossa vieraat viihtyvät."
+
+[gallery_image_one_alt]
+other = "Juhlaillallista varten katetut pöydät"
+
+[gallery_image_two_alt]
+other = "Juhlakattaus näkymällä puutarhaan"
+
+[gallery_image_three_alt]
+other = "Lepplaxin seurantalon valoisa eteinen"
+
+[cta_eyebrow]
+other = "SEURAAVA TAPAHTUMANNE ALKAA TÄÄLTÄ"
+
+[cta_title]
+other = "Etsitään sopiva päivä."
+
+[cta_description]
+other = "Seurantalo varataan puhelimitse. Yhteyshenkilö on Gunborg, puh. 050 406 6189. Muissa kysymyksissä voit lähettää meille viestin Facebookissa."
+
+[cta_button]
+other = "Lähetä meille viesti Facebookissa"
+
+[location_eyebrow]
+other = "LÖYDÄ PERILLE"
+
+[location_title]
+other = "Lepplaxissa tavataan."
+
+[location_link]
+other = "Avaa Google Mapsissa"
+
+[location_map_title]
+other = "Kartta Lepplaxin seurantalon sijainnista Lepplaxissa, Suomessa"
+
+[location_sign_alt]
+other = "Lepplaxin seurantalon tienvarsiopaste tulotien varrella"
+
+[location_sign_caption]
+other = "Lähestyessäsi pidä silmällä tätä tienvarren kylttiä."
+
+[footer_note]
+other = "Lepplax byaförening rf perustettiin vuonna 1989, ja sen tarkoituksena on vahvistaa kyläyhteisöä kaikille kyläläisille. Yhdistys omistaa ja ylläpitää kylän seurantaloa."
+
+[footer_contact_label]
+other = "Varaukset ja kysymykset"
+
+[footer_top]
+other = "Sivun alkuun ↑"
+
+[nav_location]
+other = "Sijainti"
+
+[footer_sitemap]
+other = "Sivukartta"
+
+[howto_title]
+other = "Näin varaat"
+
+[howto_step1]
+other = "Katso alla olevasta kalenterista, mitkä päivät ovat vapaita."
+
+[howto_step2]
+other = "Soita Gunborgille ja kerro toivomasi päivämäärä."
+
+[howto_step3]
+other = "Gunborg vahvistaa varauksen ja vastaa kysymyksiisi."
+
+[more_images]
+other = "Lisää kuvia"
+
+[more_images_all]
+other = "Katso kaikki kuvat"
+
+[meta_owner]
+other = "Seurantalon omistaa Lepplax byaförening rf."

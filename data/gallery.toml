@@ -1,0 +1,54 @@
+[[sections]]
+heading = "gallery_hall"
+alt = "gallery_hall_alt"
+images = [
+  "festsalen.jpg",
+  "festsalen2.jpg",
+  "festsalen3.jpg",
+  "festsalen4.jpg",
+  "festsalen5.jpg",
+  "festsalen6.jpg",
+  "festsalen7.jpg",
+  "festsalen8.jpg",
+  "festsalen9.jpg",
+  "festsalen10.jpg",
+  "tamburen.jpg",
+  "tamburen2.jpg",
+  "tamburen3.jpg",
+  "tamburen4.jpg",
+]
+
+[[sections]]
+heading = "gallery_entrance"
+alt = "gallery_entrance_alt"
+images = [
+  "omgivningvalkommen.jpg",
+  "omgivningvalkommen2.jpg",
+]
+
+[[sections]]
+heading = "gallery_kitchen"
+alt = "gallery_kitchen_alt"
+note = "gallery_kitchen_note"
+images = [
+  "koket.jpg",
+  "koket2.jpg",
+]
+
+[[sections]]
+heading = "gallery_upstairs"
+alt = "gallery_upstairs_alt"
+note = "gallery_upstairs_note"
+images = [
+  "overvaning.jpg",
+  "ovrevaning2.jpg",
+]
+
+[[sections]]
+heading = "gallery_surroundings"
+alt = "gallery_surroundings_alt"
+images = [
+  "lepplax-samlingshus.jpg",
+  "omgivninggarden.jpg",
+  "omgivninglepplaxskylt.jpg",
+]

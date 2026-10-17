@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <section class="subpage-hero section-wrap">
+    <p class="eyebrow"><span class="eyebrow-line"></span>{{ i18n "gallery_page_eyebrow" }}</p>
+    <h1>{{ .Title }}</h1>
+    <p>{{ i18n "gallery_page_intro" }}</p>
+  </section>
+
+  <div class="photo-sections section-wrap">
+    {{ range hugo.Data.gallery.sections }}
+      <section class="photo-section" id="{{ .heading }}">
+        <header class="photo-section-heading">
+          <h2>{{ i18n .heading }}</h2>
+          {{ with .note }}<p>{{ i18n . }}</p>{{ end }}
+        </header>
+        <div class="photo-grid">
+          {{ $altKey := .alt }}
+          {{ range .images }}
+            <figure class="photo-card">
+              <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}">
+                <img src="{{ printf "images/%s" . | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
+              </button>
+            </figure>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  </div>
+
+  <dialog class="photo-lightbox" aria-label="{{ i18n "gallery_lightbox_label" }}">
+    <button class="photo-lightbox-close" type="button" aria-label="{{ i18n "gallery_close_image" }}">×</button>
+    <button class="photo-lightbox-nav photo-lightbox-prev" type="button" aria-label="{{ i18n "gallery_prev_image" }}">‹</button>
+    <img class="photo-lightbox-image" alt="">
+    <button class="photo-lightbox-nav photo-lightbox-next" type="button" aria-label="{{ i18n "gallery_next_image" }}">›</button>
+  </dialog>
+  <script src="{{ "js/gallery.js" | relURL }}" defer></script>
+{{ end }}

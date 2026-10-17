@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-about">
+      <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+      <p>{{ i18n "footer_note" }}</p>
+    </div>
+    <nav class="footer-sitemap" aria-label="{{ i18n "footer_sitemap" }}">
+      <span class="footer-contact-label">{{ i18n "footer_sitemap" }}</span>
+      <ul>
+        <li><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "nav_about" }}</a></li>
+        <li><a href="{{ i18n "nav_booking_path" | relLangURL }}">{{ i18n "nav_booking" }}</a></li>
+        <li><a href="{{ i18n "nav_gallery_path" | relLangURL }}">{{ i18n "nav_gallery" }}</a></li>
+        <li><a href="{{ .Site.Home.RelPermalink }}#contact">{{ i18n "nav_contact" }}</a></li>
+        <li><a href="{{ .Site.Home.RelPermalink }}#location">{{ i18n "nav_location" }}</a></li>
+      </ul>
+    </nav>
+    <div class="footer-contact">
+      <span class="footer-contact-label">{{ i18n "footer_contact_label" }}</span>
+      <span>{{ i18n "contact_name" }} · <a href="tel:+358504066189">{{ i18n "contact_phone" }}</a></span>
+      <a href="https://www.facebook.com/lepplax" target="_blank" rel="noopener noreferrer">{{ i18n "contact_facebook" }} <span aria-hidden="true">↗</span></a>
+    </div>
+    <a class="footer-top" href="#top">{{ i18n "footer_top" }}</a>
+  </div>
+</footer>

@@ -1,0 +1,22 @@
+baseURL = 'https://example.org/'
+defaultContentLanguage = 'sv'
+defaultContentLanguageInSubdir = false
+title = 'Lepplax samlingshus'
+theme = 'lepplaxbyf'
+disableKinds = ['taxonomy', 'term']
+
+[languages]
+  [languages.sv]
+    locale = 'sv-FI'
+    label = 'Svenska'
+    weight = 1
+    title = 'Lepplax samlingshus'
+  [languages.fi]
+    locale = 'fi-FI'
+    label = 'Suomi'
+    contentDir = 'content_fi'
+    weight = 2
+    title = 'Lepplaxin seurantalo'
+
+[params]
+description = 'En trivsam plats för fest, bröllop och gemenskap i Lepplax.'
