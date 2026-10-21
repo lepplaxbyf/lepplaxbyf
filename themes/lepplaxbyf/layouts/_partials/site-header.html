@@ -9,7 +9,22 @@
         <span class="wordmark-place">{{ i18n "brand_label" }}</span>
       </span>
     </a>
-    <nav class="main-nav" aria-label="{{ i18n "nav_menu" }}">
+    <button
+      class="menu-toggle"
+      hidden
+      type="button"
+      aria-controls="main-navigation"
+      aria-expanded="false"
+      aria-label="{{ i18n "menu_open" }}"
+      data-open-label="{{ i18n "menu_open" }}"
+      data-close-label="{{ i18n "menu_close" }}">
+      <svg class="menu-toggle-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24">
+        <path class="menu-icon-line menu-icon-top" d="M4 6h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        <path class="menu-icon-line menu-icon-middle" d="M4 12h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        <path class="menu-icon-line menu-icon-bottom" d="M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </button>
+    <nav class="main-nav" id="main-navigation" aria-label="{{ i18n "nav_menu" }}" hidden>
       <a href="{{ .Site.Home.RelPermalink }}">{{ i18n "nav_about" }}</a>
       <a href="{{ $bookingURL }}">{{ i18n "nav_booking" }}</a>
       <a href="{{ $galleryURL }}">{{ i18n "nav_gallery" }}</a>
@@ -20,3 +35,4 @@
     </nav>
   </div>
 </header>
+<script src="{{ "js/navigation.js" | relURL }}" defer></script>

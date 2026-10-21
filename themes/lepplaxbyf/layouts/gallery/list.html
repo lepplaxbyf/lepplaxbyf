@@ -6,7 +6,7 @@
   </section>
 
   <div class="photo-sections section-wrap">
-    {{ range hugo.Data.gallery.sections }}
+    {{ range site.Data.gallery.sections }}
       <section class="photo-section" id="{{ .heading }}">
         <header class="photo-section-heading">
           <h2>{{ i18n .heading }}</h2>

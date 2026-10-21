@@ -1,6 +1,12 @@
 [nav_menu]
 other = "Huvudmeny"
 
+[menu_open]
+other = "Öppna menyn"
+
+[menu_close]
+other = "Stäng menyn"
+
 [brand_label]
 other = "Lepplax byaförening rf"
 
@@ -212,7 +218,7 @@ other = "ER NÄSTA SAMMANKOMST BÖRJAR HÄR"
 other = "Låt oss hitta rätt dag."
 
 [cta_description]
-other = "Bokning av samlingshuset sker per telefon. Kontakta Gunborg på 050 406 6189 för att fråga om lediga datum. För övriga frågor kan du skriva till oss på Facebook."
+other = "Bokning av samlingshuset sker per telefon. Kontakta Gunborg för att fråga om lediga datum. För övriga frågor kan du skriva till oss på Facebook."
 
 [cta_button]
 other = "Skriv till oss på Facebook"

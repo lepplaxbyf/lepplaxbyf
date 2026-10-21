@@ -1,6 +1,12 @@
 [nav_menu]
 other = "Päävalikko"
 
+[menu_open]
+other = "Avaa valikko"
+
+[menu_close]
+other = "Sulje valikko"
+
 [brand_label]
 other = "Lepplax byaförening rf"
 
@@ -212,7 +218,7 @@ other = "SEURAAVA TAPAHTUMANNE ALKAA TÄÄLTÄ"
 other = "Etsitään sopiva päivä."
 
 [cta_description]
-other = "Seurantalo varataan puhelimitse. Yhteyshenkilö on Gunborg, puh. 050 406 6189. Muissa kysymyksissä voit lähettää meille viestin Facebookissa."
+other = "Seurantalo varataan puhelimitse. Kysy Gunborgilta vapaita päiviä. Muissa kysymyksissä voit lähettää meille viestin Facebookissa."
 
 [cta_button]
 other = "Lähetä meille viesti Facebookissa"

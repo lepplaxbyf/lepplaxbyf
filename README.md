@@ -4,7 +4,7 @@ Website for the community house of Lepplax byaförening rf, built with [Hugo](ht
 
 ## Requirements
 
-- Hugo **extended**, v0.123 or newer. Install a recent release from the [Hugo releases page](https://github.com/gohugoio/hugo/releases) rather than a distro package if the `apt` version is outdated.
+- Hugo **extended**, v0.147 or newer. Install a recent release from the [Hugo releases page](https://github.com/gohugoio/hugo/releases) rather than a distro package if the `apt` version is outdated.
 
 ## Development
 
@@ -40,7 +40,7 @@ hugo               # build the site into public/
 The site is deployed from Git with Cloudflare Workers static assets. `wrangler.jsonc` runs the Hugo build (`hugo --gc --minify`) as part of `npx wrangler deploy` and publishes the `public/` folder. In the Cloudflare project settings:
 
 - **Deploy command:** `npx wrangler deploy`
-- **Build variable** (Settings → Build → Variables and secrets, not the runtime variables): `HUGO_VERSION` = `0.168.0`. The theme needs Hugo 0.160 or newer, which is newer than Cloudflare's default.
+- **Build variable** (Settings → Build → Variables and secrets, not the runtime variables): `HUGO_VERSION` = `0.168.0`. This is optional, but it keeps Cloudflare on the same Hugo version as local development.
 
 Set `baseURL` in `hugo.toml` to the real address; it is currently the placeholder `https://example.org/`.
 

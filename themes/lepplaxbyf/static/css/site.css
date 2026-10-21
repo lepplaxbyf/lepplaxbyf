@@ -89,6 +89,10 @@ body > main {
   gap: clamp(18px, 3vw, 38px);
 }
 
+.main-nav[hidden] {
+  display: none !important;
+}
+
 .main-nav a {
   color: var(--forest);
   font-size: 13px;
@@ -113,6 +117,14 @@ body > main {
   background: #f2e6cd;
   font-weight: 600;
   white-space: nowrap;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle[hidden] {
+  display: none !important;
 }
 
 .hero {
@@ -708,6 +720,17 @@ body > main {
   color: rgba(255, 255, 255, 0.76);
 }
 
+.contact-copy a[href^="tel:"] {
+  color: #f2e6cd;
+  text-decoration-color: #e1c894;
+  text-underline-offset: 0.18em;
+}
+
+.contact-copy a[x-apple-data-detectors] {
+  color: rgba(255, 255, 255, 0.76) !important;
+  text-decoration: none !important;
+}
+
 .contact-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1261,6 +1284,150 @@ body > main {
 
   .how-to-book-phone {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header-inner {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-block: 13px;
+  }
+
+  .menu-toggle {
+    width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border: 1px solid rgba(35, 61, 50, 0.3);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--forest);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .menu-toggle:focus-visible,
+  .main-nav a:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+  }
+
+  .menu-toggle-icon {
+    flex: 0 0 auto;
+  }
+
+  .menu-icon-line {
+    transition: transform 160ms ease, opacity 160ms ease;
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-icon-top {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-icon-middle {
+    opacity: 0;
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-icon-bottom {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .main-nav,
+  .main-nav.is-open {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 8px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .main-nav a {
+    padding: 13px 8px;
+    border-bottom: 1px solid rgba(35, 61, 50, 0.12);
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .main-nav .nav-contact {
+    padding: 13px 12px;
+    border-bottom: 0;
+  }
+
+  .main-nav .language-link {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+  }
+
+  .hero-description,
+  .subpage-hero > p:last-child,
+  .section-heading > p:last-child,
+  .gallery-heading > p,
+  .feature-card p,
+  .booking-heading p,
+  .photo-section-heading p,
+  .booking-contact,
+  .contact-copy > p:last-child,
+  .arrival-card figcaption {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .button,
+  .text-link {
+    font-size: 15px;
+  }
+
+  .hero-photo figcaption {
+    font-size: 14px;
+  }
+
+  .fact-label {
+    font-size: 12px;
+  }
+
+  .feature-index,
+  .footer-contact-label {
+    font-size: 12px;
+  }
+
+  .site-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding-block: 32px;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .footer-brand {
+    font-size: 18px;
   }
 }
 
