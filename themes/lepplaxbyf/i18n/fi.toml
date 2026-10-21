@@ -170,19 +170,19 @@ other = "Täällä on tilaa niin elämän suurille juhlapäiville kuin pienille 
 other = "Keittiö on valmiina"
 
 [feature_kitchen_description]
-other = "Moderni ja hyvin varusteltu keittiö, ruoka- ja kahviastiasto sekä pöytäliinat noin 200 hengelle."
+other = "Hyvin varusteltu keittiö, jossa on runsaasti työskentelytilaa. Ruoka- ja kahviastiasto sekä pöytäliinat noin 200 hengelle."
 
 [feature_gather_title]
-other = "Tilaa koko seurueelle"
+other = "Juhlasali valmiina juhlaan"
 
 [feature_gather_description]
-other = "Yläkertaan mahtuu 50 henkilöä. Talo sopii niin häihin kuin yhdistysten tapaamisiinkin."
+other = "Valoisa juhlasali sopii häihin, juhliin ja yhteisiin aterioihin. Juhlasalissa on myös valkoisia tuolinpäällisiä."
 
 [feature_welcome_title]
 other = "Esteetön ja kutsuva"
 
 [feature_welcome_description]
-other = "Seurantalo soveltuu myös liikuntarajoitteisille. Valkoisia tuolinpäällisiä voi vuokrata juhliin."
+other = "Lepplaxin seurantalo on esteetön ja toivottaa kaikki vieraat tervetulleiksi."
 
 [feature_kitchen_alt]
 other = "Lepplaxin seurantalon keittiö"
@@ -191,7 +191,7 @@ other = "Lepplaxin seurantalon keittiö"
 other = "Juhlasalin katetut pöydät"
 
 [feature_welcome_alt]
-other = "Valoisa ja tilava juhlasali"
+other = "Kukkia ja tervetulokyltti Lepplaxin seurantalon sisäänkäynnillä"
 
 [gallery_eyebrow]
 other = "PIENI KURKISTUS"

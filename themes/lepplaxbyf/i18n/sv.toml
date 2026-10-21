@@ -170,19 +170,19 @@ other = "Här finns utrymme för både de stora festdagarna och de små stundern
 other = "Ett kök som är redo"
 
 [feature_kitchen_description]
-other = "Ett modernt, välutrustat kök med mat- och kaffeservis samt dukar för omkring 200 personer."
+other = "Ett välutrustat kök med gott om arbetsyta. Mat- och kaffeservis samt dukar finns för cirka 200 personer."
 
 [feature_gather_title]
-other = "Gott om rum"
+other = "Festsalen redo för fest"
 
 [feature_gather_description]
-other = "På övre våningen ryms 50 personer. Huset passar för allt från bröllop till föreningsträffar."
+other = "Den ljusa festsalen passar för bröllop, kalas och gemensamma måltider. Vita stolsöverdrag finns också."
 
 [feature_welcome_title]
 other = "Välkomnande för alla"
 
 [feature_welcome_description]
-other = "Samlingshuset är handikappanpassat. Vita stolsöverdrag finns också att hyra till festen."
+other = "Lepplax samlingshus är handikappanpassat och välkomnar alla gäster."
 
 [feature_kitchen_alt]
 other = "Köket i Lepplax samlingshus"
@@ -191,7 +191,7 @@ other = "Köket i Lepplax samlingshus"
 other = "Dukade bord i festsalen"
 
 [feature_welcome_alt]
-other = "Ljus och rymlig festsal"
+other = "Blommor och en välkomstskylt vid Lepplax samlingshus entré"
 
 [gallery_eyebrow]
 other = "EN FÖRSTA TITT"
