@@ -329,11 +329,6 @@ body > main {
   line-height: 1.5;
 }
 
-.fact-label-highlight {
-  color: #f3dfb7;
-  font-size: 15px;
-}
-
 .fact-accessibility-icon {
   width: 28px;
   height: 28px;
@@ -1446,10 +1441,6 @@ body > main {
 
   .fact-label {
     font-size: 12px;
-  }
-
-  .fact-label-highlight {
-    font-size: 13px;
   }
 
   .feature-index,
