@@ -1350,20 +1350,21 @@ body > main {
     flex: 0 0 auto;
   }
 
-  .menu-icon-line {
-    transition: transform 160ms ease, opacity 160ms ease;
+  .menu-icon-line,
+  .menu-icon-close {
+    transition: opacity 160ms ease;
   }
 
-  .menu-toggle[aria-expanded="true"] .menu-icon-top {
-    transform: translateY(6px) rotate(45deg);
-  }
-
-  .menu-toggle[aria-expanded="true"] .menu-icon-middle {
+  .menu-icon-close {
     opacity: 0;
   }
 
-  .menu-toggle[aria-expanded="true"] .menu-icon-bottom {
-    transform: translateY(-6px) rotate(-45deg);
+  .menu-toggle[aria-expanded="true"] .menu-icon-line {
+    opacity: 0;
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-icon-close {
+    opacity: 1;
   }
 
   .main-nav,
