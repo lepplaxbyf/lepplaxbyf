@@ -314,8 +314,7 @@ body > main {
   gap: 13px;
 }
 
-.fact-number,
-.fact-symbol {
+.fact-number {
   color: #f3dfb7;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 34px;
@@ -323,15 +322,52 @@ body > main {
   white-space: nowrap;
 }
 
-.fact-symbol {
-  font-size: 29px;
-}
-
 .fact-label {
   max-width: 125px;
   color: rgba(255, 255, 255, 0.78);
   font-size: 12px;
   line-height: 1.5;
+}
+
+.fact-label-highlight {
+  color: #f3dfb7;
+  font-size: 15px;
+}
+
+.fact-accessibility-icon {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  align-self: center;
+  fill: none;
+  stroke: #f3dfb7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.inline-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  flex: 0 0 auto;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+  vertical-align: middle;
+}
+
+.inline-icon-down {
+  width: 16px;
+  height: 16px;
+}
+
+.inline-icon-external {
+  width: 16px;
+  height: 16px;
 }
 
 .fact-divider {
@@ -841,8 +877,7 @@ body > main {
     gap: 8px;
   }
 
-  .fact-number,
-  .fact-symbol {
+  .fact-number {
     font-size: 29px;
   }
 
@@ -1411,6 +1446,10 @@ body > main {
 
   .fact-label {
     font-size: 12px;
+  }
+
+  .fact-label-highlight {
+    font-size: 13px;
   }
 
   .feature-index,
