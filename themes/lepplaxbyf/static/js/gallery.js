@@ -3,26 +3,72 @@
   if (!(dialog instanceof HTMLDialogElement)) return;
 
   const lightboxImage = dialog.querySelector(".photo-lightbox-image");
+  const lightboxVideo = dialog.querySelector(".photo-lightbox-video");
   const closeButton = dialog.querySelector(".photo-lightbox-close");
   const prevButton = dialog.querySelector(".photo-lightbox-prev");
   const nextButton = dialog.querySelector(".photo-lightbox-next");
   if (!(lightboxImage instanceof HTMLImageElement) || !(closeButton instanceof HTMLButtonElement)) return;
 
-  const images = Array.from(document.querySelectorAll(".photo-open img")).filter(
-    (image) => image instanceof HTMLImageElement,
-  );
+  // Collect all media items (both images and videos) in order
+  const mediaItems = [];
+  document.querySelectorAll(".photo-card").forEach((card, cardIndex) => {
+    const img = card.querySelector("img");
+    const video = card.querySelector("video");
+    
+    if (img) {
+      mediaItems.push({
+        type: "image",
+        src: img.currentSrc || img.src,
+        alt: img.alt,
+        cardIndex: cardIndex,
+      });
+    } else if (video) {
+      mediaItems.push({
+        type: "video",
+        src: video.src,
+        alt: video.alt || "Video",
+        cardIndex: cardIndex,
+      });
+    }
+  });
+
   let current = 0;
 
   const show = (index) => {
-    current = (index + images.length) % images.length;
-    const image = images[current];
-    lightboxImage.src = image.currentSrc || image.src;
-    lightboxImage.alt = image.alt;
+    current = (index + mediaItems.length) % mediaItems.length;
+    const item = mediaItems[current];
+
+    if (item.type === "image") {
+      lightboxImage.style.display = "block";
+      lightboxVideo.style.display = "none";
+      lightboxImage.src = item.src;
+      lightboxImage.alt = item.alt;
+    } else if (item.type === "video") {
+      lightboxImage.style.display = "none";
+      lightboxVideo.style.display = "block";
+      lightboxVideo.src = item.src;
+      lightboxVideo.play();
+    }
   };
 
-  images.forEach((image, index) => {
-    image.closest(".photo-open").addEventListener("click", () => {
-      show(index);
+  document.querySelectorAll(".photo-open").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Find which media item this button corresponds to
+      const card = btn.closest(".photo-card");
+      const cardIndex = Array.from(document.querySelectorAll(".photo-card")).indexOf(card);
+      const mediaIndex = mediaItems.findIndex((item) => item.cardIndex === cardIndex);
+      show(mediaIndex);
+      dialog.showModal();
+    });
+  });
+
+  document.querySelectorAll(".gallery-video").forEach((video) => {
+    video.addEventListener("click", () => {
+      // Find which media item this video corresponds to
+      const card = video.closest(".photo-card");
+      const cardIndex = Array.from(document.querySelectorAll(".photo-card")).indexOf(card);
+      const mediaIndex = mediaItems.findIndex((item) => item.cardIndex === cardIndex);
+      show(mediaIndex);
       dialog.showModal();
     });
   });

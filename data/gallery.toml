@@ -1,60 +1,62 @@
 [[sections]]
 heading = "gallery_hall"
 alt = "gallery_hall_alt"
-images = [
-  "festsalen.jpg",
-  "festsalen2.jpg",
-  "festsalen3.jpg",
-  "festsalen4.jpg",
-  "festsalen5.jpg",
-  "festsalen6.jpg",
-  "festsalen7.jpg",
-  "festsalen8.jpg",
-  "festsalen9.jpg",
-  "festsalen10.jpg",
+media = [
+  { type = "image", file = "festsalen.jpg" },
+  { type = "image", file = "festsalen2.jpg" },
+  { type = "image", file = "festsalen3.jpg" },
+  { type = "image", file = "festsalen4.jpg" },
+  { type = "image", file = "festsalen5.jpg" },
+  { type = "image", file = "festsalen6.jpg" },
+  { type = "image", file = "festsalen7.jpg" },
+  { type = "image", file = "festsalen8.jpg" },
+  { type = "image", file = "festsalen9.jpg" },
+  { type = "image", file = "festsalen10.jpg" },
+  { type = "video", file = "festsalen_video.mp4" },
+  { type = "video", file = "festsalen_video2.mp4" },
 ]
 
 [[sections]]
 heading = "gallery_tamburen"
 alt = "gallery_tamburen_alt"
-images = [
-  "tamburen.jpg",
-  "tamburen2.jpg",
-  "tamburen3.jpg",
-  "tamburen4.jpg",
+media = [
+  { type = "image", file = "tamburen.jpg" },
+  { type = "image", file = "tamburen2.jpg" },
+  { type = "image", file = "tamburen3.jpg" },
+  { type = "image", file = "tamburen4.jpg" },
 ]
 
 [[sections]]
 heading = "gallery_entrance"
 alt = "gallery_entrance_alt"
-images = [
-  "omgivningvalkommen.jpg",
-  "omgivningvalkommen2.jpg",
+media = [
+  { type = "image", file = "omgivningvalkommen.jpg" },
+  { type = "image", file = "omgivningvalkommen2.jpg" },
 ]
 
 [[sections]]
 heading = "gallery_kitchen"
 alt = "gallery_kitchen_alt"
 note = "gallery_kitchen_note"
-images = [
-  "koket.jpg",
-  "koket2.jpg",
+media = [
+  { type = "image", file = "koket.jpg" },
+  { type = "image", file = "koket2.jpg" },
 ]
 
 [[sections]]
 heading = "gallery_upstairs"
 alt = "gallery_upstairs_alt"
 note = "gallery_upstairs_note"
-images = [
-  "overvaning.jpg",
-  "ovrevaning2.jpg",
+media = [
+  { type = "image", file = "overvaning.jpg" },
+  { type = "image", file = "ovrevaning2.jpg" },
 ]
 
 [[sections]]
 heading = "gallery_surroundings"
 alt = "gallery_surroundings_alt"
-images = [
-  "lepplax-samlingshus.jpg",
-  "omgivninggarden.jpg",
-  "omgivninglepplaxskylt.jpg",
+media = [
+  { type = "image", file = "lepplax-samlingshus.jpg" },
+  { type = "image", file = "omgivninggarden.jpg" },
+  { type = "image", file = "omgivninglepplaxskylt.jpg" },
 ]

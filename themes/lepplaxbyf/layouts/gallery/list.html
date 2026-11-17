@@ -12,16 +12,42 @@
           <h2>{{ i18n .heading }}</h2>
           {{ with .note }}<p>{{ i18n . }}</p>{{ end }}
         </header>
-        <div class="photo-grid">
-          {{ $altKey := .alt }}
-          {{ range .images }}
-            <figure class="photo-card">
-              <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}">
-                <img src="{{ printf "images/%s" . | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
-              </button>
-            </figure>
-          {{ end }}
-        </div>
+        {{ $altKey := .alt }}
+        {{ $videos := where .media "type" "video" }}
+        {{ if $videos }}
+          <div class="photo-grid">
+            {{ range .media }}
+              {{ if eq .type "image" }}
+                <figure class="photo-card">
+                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ printf "images/%s" .file | relURL }}">
+                    <img src="{{ printf "images/%s" .file | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
+                  </button>
+                </figure>
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="video-grid">
+            {{ range .media }}
+              {{ if eq .type "video" }}
+                <figure class="photo-card">
+                  <video src="{{ printf "videos/%s" .file | relURL }}" controls preload="metadata" class="gallery-video" data-media-type="video" data-media-src="{{ printf "videos/%s" .file | relURL }}"></video>
+                </figure>
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ else }}
+          <div class="photo-grid">
+            {{ range .media }}
+              {{ if eq .type "image" }}
+                <figure class="photo-card">
+                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ printf "images/%s" .file | relURL }}">
+                    <img src="{{ printf "images/%s" .file | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
+                  </button>
+                </figure>
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
       </section>
     {{ end }}
   </div>
@@ -29,7 +55,10 @@
   <dialog class="photo-lightbox" aria-label="{{ i18n "gallery_lightbox_label" }}">
     <button class="photo-lightbox-close" type="button" aria-label="{{ i18n "gallery_close_image" }}">×</button>
     <button class="photo-lightbox-nav photo-lightbox-prev" type="button" aria-label="{{ i18n "gallery_prev_image" }}">‹</button>
-    <img class="photo-lightbox-image" alt="">
+    <div class="photo-lightbox-container">
+      <img class="photo-lightbox-image" alt="" style="display: none;">
+      <video class="photo-lightbox-video" controls style="display: none;"></video>
+    </div>
     <button class="photo-lightbox-nav photo-lightbox-next" type="button" aria-label="{{ i18n "gallery_next_image" }}">›</button>
   </dialog>
   <script src="{{ "js/gallery.js" | relURL }}" defer></script>
