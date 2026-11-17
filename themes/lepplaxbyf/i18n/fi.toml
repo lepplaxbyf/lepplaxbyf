@@ -176,19 +176,19 @@ other = "Täällä on tilaa niin elämän suurille juhlapäiville kuin pienille 
 other = "Keittiö on valmiina"
 
 [feature_kitchen_description]
-other = """Hyvin varusteltu keittiö, jossa on runsaasti työskentelytilaa. Ruoka- ja kahviastiasto 160 hengelle. Suuri kylmähuone, uuni, liesi, keittopata, astianpesukone, kahvinkeittimen jne. Lämpölevy ruoan lämmitykseen. Alemmassa kerroksessa on kaksi suurta jääkaappia ja pakastin."""
+other = """Hyvin varustellussa keittiössä on runsaasti työskentelytilaa sekä ruoka- ja kahviastiastot 160 hengelle. Keittiön varusteluun kuuluvat suuri kylmähuone, uuni, liesi, keittopata, astianpesukone, kahvinkeitin ja ruoan lämpimänä pitämiseen tarkoitettu lämpölevy. Alakerrassa on lisäksi kaksi suurta jääkaappia ja pakastin."""
 
 [feature_gather_title]
 other = "Juhlasali valmiina juhlaan"
 
 [feature_gather_description]
-other = """Valoisa juhlasali sopii häihin, juhliin ja yhteisiin aterioihin. Salissa on liinavaatteet, valkoiset tuolinpäälliset, iso näyttö, el-digitalpiano, äänentoistolaitteet, mikrofonit, photobooth jne. Kesällä on myös jäähdytysmahdollisuus."""
+other = """Valoisa juhlasali sopii erinomaisesti häihin, perhejuhliin ja yhteisiin aterioihin. Salin varusteluun kuuluvat pöytäliinat, valkoiset tuolinpäälliset, suuri näyttö, digitaalipiano, äänentoistolaitteet, mikrofonit ja kuvauspiste (photobooth). Kesäisin salia voidaan myös viilentää."""
 
 [feature_welcome_title]
 other = "Esteetön ja kutsuva"
 
 [feature_welcome_description]
-other = "Lepplaxin seurantalo on esteetön ja toivottaa kaikki vieraat tervetulleiksi. Pyörätuoliluiskalla on erillinen sisäänkäynti juhlasaliin ja tambuuri löytyy inva-wc."
+other = "Lepplaxin seurantalo toivottaa kaikki vieraat tervetulleiksi. Juhlasaliin on esteetön sisäänkäynti pyörätuoliluiskan kautta, ja tambuurissa on esteetön WC."
 
 [feature_kitchen_alt]
 other = "Lepplaxin seurantalon keittiö"
