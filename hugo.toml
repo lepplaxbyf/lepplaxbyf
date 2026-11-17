@@ -17,6 +17,12 @@ disableKinds = ['taxonomy', 'term']
     contentDir = 'content_fi'
     weight = 2
     title = 'Lepplaxin seurantalo'
+  [languages.en]
+    locale = 'en-US'
+    label = 'English'
+    contentDir = 'content_en'
+    weight = 3
+    title = 'Lepplax samlingshus'
 
 [params]
 description = 'En trivsam plats för fest, bröllop och gemenskap i Lepplax.'

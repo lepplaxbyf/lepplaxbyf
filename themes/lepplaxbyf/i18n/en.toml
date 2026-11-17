@@ -1,0 +1,284 @@
+[nav_menu]
+other = "Main Menu"
+
+[menu_open]
+other = "Open menu"
+
+[menu_close]
+other = "Close menu"
+
+[brand_label]
+other = "Lepplax byaförening rf"
+
+[nav_about]
+other = "Home"
+
+[nav_facilities]
+other = "Facilities"
+
+[nav_booking]
+other = "Bookings & Calendar"
+
+[nav_booking_path]
+other = "bookings/"
+
+[nav_gallery]
+other = "Photos"
+
+[nav_gallery_path]
+other = "photos/"
+
+[language_switch]
+other = "English"
+
+[nav_contact]
+other = "Contact"
+
+[contact_name]
+other = "Gunborg Henriksson"
+
+[contact_phone]
+other = "050 406 6189"
+
+[contact_call]
+other = "Call 050 406 6189"
+
+[contact_facebook]
+other = "Visit our Facebook page"
+
+[booking_eyebrow]
+other = "CALENDAR"
+
+[booking_intro]
+other = "In the calendar below you can see bookings and other events at the community hall. If you want to rent the house, give us a call to check available dates."
+
+[booking_calendar_title]
+other = "Calendar"
+
+[booking_calendar_note]
+other = "The calendar shows bookings and other events at Lepplax samlingshus."
+
+[booking_open_calendar]
+other = "Open the calendar in Google"
+
+[booking_contact_note]
+other = "Bookings are made by phone. Contact Gunborg to check available dates:"
+
+[booking_page_title]
+other = "Bookings & Calendar"
+
+[gallery_page_eyebrow]
+other = "A LOOK INSIDE"
+
+[gallery_page_intro]
+other = "Discover the community hall, from the banquet hall to the surroundings of the building."
+
+[gallery_open_image]
+other = "View the image in full size"
+
+[gallery_lightbox_label]
+other = "Enlarged image"
+
+[gallery_close_image]
+other = "Close the image"
+
+[gallery_prev_image]
+other = "Previous image"
+
+[gallery_next_image]
+other = "Next image"
+
+[gallery_hall]
+other = "Banquet Hall"
+
+[gallery_hall_alt]
+other = "Banquet hall at Lepplax samlingshus with set tables and chairs"
+
+[gallery_tamburen]
+other = "Entrance Hall"
+
+[gallery_tamburen_alt]
+other = "The bright entrance hall at Lepplax samlingshus"
+
+[gallery_entrance]
+other = "Main Entrance"
+
+[gallery_entrance_alt]
+other = "Entrance hall and welcoming entrance areas"
+
+[gallery_kitchen]
+other = "Kitchen"
+
+[gallery_kitchen_alt]
+other = "The kitchen at Lepplax samlingshus"
+
+[gallery_kitchen_note]
+other = "Tableware and coffee service for approximately 160 people."
+
+[gallery_upstairs]
+other = "Upper Floor"
+
+[gallery_upstairs_alt]
+other = "Rooms on the upper floor of the community hall"
+
+[gallery_upstairs_note]
+other = "The upper floor has space for 50 people."
+
+[gallery_surroundings]
+other = "Surroundings"
+
+[gallery_surroundings_alt]
+other = "Lepplax samlingshus, garden and surroundings"
+
+[hero_eyebrow]
+other = "A PLACE FOR LIFE'S SPECIAL MOMENTS"
+
+[hero_title]
+other = "Welcome to Lepplax samlingshus."
+
+[hero_description]
+other = "Wedding, birthday or an evening with your whole group? Lepplax samlingshus can be rented for celebrations and togetherness throughout the year."
+
+[hero_primary]
+other = "Bookings & Calendar"
+
+[hero_secondary]
+other = "Discover the house"
+
+[hero_image_alt]
+other = "Lepplax samlingshus surrounded by greenery on a summer day"
+
+[photo_caption]
+other = "Welcome to Lepplax"
+
+[facts_capacity_label]
+other = "people's tableware and coffee service"
+
+[facts_capacity_value]
+other = "approx. 160"
+
+[facts_upstairs_label]
+other = "seats on the upper floor"
+
+[facts_accessible_label]
+other = "accessible for everyone"
+
+[about_eyebrow]
+other = "COMMUNITY WITH ROOM TO GROW"
+
+[about_title]
+other = "Make room for what you want to celebrate."
+
+[about_description]
+other = "Here there is room for both the big celebrations and the small moments together. The building is ready to be filled with people, conversations and memories."
+
+[feature_kitchen_title]
+other = "A kitchen ready to go"
+
+[feature_kitchen_description]
+other = """A well-equipped kitchen with plenty of workspace. Tableware and coffee service for 160 people. Large cold room, oven, stove, cooking pot, dishwasher, coffee maker, etc. Warming plate to keep food hot. On the lower floor there are two large refrigerators and a freezer."""
+
+[feature_gather_title]
+other = "Banquet hall ready for celebration"
+
+[feature_gather_description]
+other = """The bright banquet hall is suitable for weddings, parties, celebrations and shared meals. Includes tablecloths, white chair covers, large screen, electric digital piano, sound system, microphones, photo booth, etc. There is also the possibility of cooling during the summer."""
+
+[feature_welcome_title]
+other = "Welcoming for everyone"
+
+[feature_welcome_description]
+other = "Lepplax samlingshus is accessible to everyone and welcomes all guests. Wheelchair ramp with separate entrance to the banquet hall and accessible toilet in the entrance hall."
+
+[feature_kitchen_alt]
+other = "The kitchen at Lepplax samlingshus"
+
+[feature_gather_alt]
+other = "Set tables in the banquet hall"
+
+[feature_welcome_alt]
+other = "Flowers and welcome sign at the entrance to Lepplax samlingshus"
+
+[gallery_eyebrow]
+other = "A FIRST LOOK"
+
+[gallery_title]
+other = "See your celebration take shape."
+
+[gallery_description]
+other = "Bright rooms, set tables and an atmosphere where guests can feel at home."
+
+[gallery_image_one_alt]
+other = "Set tables for a celebration dinner"
+
+[gallery_image_two_alt]
+other = "Festive table setting with a view of the garden"
+
+[gallery_image_three_alt]
+other = "The bright entrance hall at Lepplax samlingshus"
+
+[cta_eyebrow]
+other = "YOUR NEXT GATHERING STARTS HERE"
+
+[cta_title]
+other = "Let's find the right day."
+
+[cta_description]
+other = "Bookings of Lepplax samlingshus are made by phone. Contact Gunborg to check available dates. For other questions, you can contact us on Facebook."
+
+[cta_button]
+other = "Contact us on Facebook"
+
+[location_eyebrow]
+other = "FIND US"
+
+[location_title]
+other = "We're located in Lepplax."
+
+[location_link]
+other = "Open in Google Maps"
+
+[location_map_title]
+other = "Map showing Lepplax samlingshus in Lepplax, Finland"
+
+[location_sign_alt]
+other = "Road sign for Lepplax samlingshus at the entrance"
+
+[location_sign_caption]
+other = "As you approach – look out for this sign by the road."
+
+[footer_note]
+other = "Lepplax byaförening rf was founded in 1989 and its purpose is to strengthen community spirit for everyone in the village. The village association owns and maintains the community hall in the village."
+
+[footer_contact_label]
+other = "Bookings and inquiries"
+
+[footer_top]
+other = "To the top of the page ↑"
+
+[nav_location]
+other = "Find us"
+
+[footer_sitemap]
+other = "Sitemap"
+
+[howto_title]
+other = "How to book"
+
+[howto_step1]
+other = "Check the calendar below to see which dates are available."
+
+[howto_step2]
+other = "Call Gunborg and tell her which date you want."
+
+[howto_step3]
+other = "Gunborg confirms the booking and answers your questions."
+
+[more_images]
+other = "More photos"
+
+[more_images_all]
+other = "See all photos"
+
+[meta_owner]
+other = "Lepplax samlingshus is owned by Lepplax byaförening rf."
