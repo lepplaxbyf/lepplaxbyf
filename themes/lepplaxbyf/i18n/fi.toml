@@ -20,7 +20,7 @@ other = "Tilat"
 other = "Varaukset & kalenteri"
 
 [nav_booking_path]
-other = "kalenteri/"
+other = "varaukset/"
 
 [nav_gallery]
 other = "Kuvat"
