@@ -245,10 +245,10 @@ other = "Kartta Lepplaxin seurantalon sijainnista Lepplaxissa, Suomessa"
 other = "Lepplaxin seurantalon tienvarsiopaste tulotien varrella"
 
 [location_sign_caption]
-other = "Lähestyessäsi pidä silmällä tätä tienvarren kylttiä."
+other = "Kun lähestyt seurantaloa, pidä silmällä tätä tienvarressa olevaa kylttiä."
 
 [footer_note]
-other = "Lepplax byaförening rf perustettiin vuonna 1989, ja sen tarkoituksena on vahvistaa kyläyhteisöä kaikille kyläläisille. Yhdistys omistaa ja ylläpitää kylän seurantaloa."
+other = "Lepplax byaförening rf perustettiin vuonna 1989. Yhdistyksen tavoitteena on vahvistaa kylän yhteisöllisyyttä ja edistää kaikkien kyläläisten viihtyvyyttä. Yhdistys omistaa ja ylläpitää kylän seurantaloa."
 
 [footer_contact_label]
 other = "Varaukset ja kysymykset"

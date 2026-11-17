@@ -31,13 +31,15 @@
         <h2>{{ i18n "booking_calendar_title" }}</h2>
         <p>{{ i18n "booking_calendar_note" }}</p>
       </div>
-      <a class="button button-primary" href="https://www.google.com/calendar/embed?color=%239fe1e7&amp;embed_style=WyJhdDplbWI6c3QiLCIjZTBlMGUwIiwiI2VkZWRlZCIsIiM0MTg0ZjMiLCJyb2JvdG8iLCIjNjM2MzYzIiw1MDAsIiNmZmYiXQo&amp;eopt=0&amp;mode=month&amp;showCalendars=1&amp;showPrint=0&amp;showTitle=0&amp;showTz=0&amp;src=lepplaxbyf%40gmail.com" target="_blank" rel="noopener noreferrer">
+      {{ $calendarUrl := "https://www.google.com/calendar/embed?color=%239fe1e7&embed_style=WyJhdDplbWI6c3QiLCIjZTBlMGUwIiwiI2VkZWRlZCIsIiM0MTg0ZjMiLCJyb2JvdG8iLCIjNjM2MzYzIiw1MDAsIiNmZmYiXQo&eopt=0&mode=month&showCalendars=1&showPrint=0&showTitle=0&showTz=0&hl=" }}
+      {{ $langCode := cond (eq .Language.Lang "fi") "fi" (cond (eq .Language.Lang "en") "en" "sv") }}
+      <a class="button button-primary" href="{{ $calendarUrl }}{{ $langCode }}&src=lepplaxbyf%40gmail.com" target="_blank" rel="noopener noreferrer">
         {{ i18n "booking_open_calendar" }} <svg class="inline-icon inline-icon-external" aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5m0-5-9 9"></path><path d="M18 13v5H5V6h5"></path></svg>
       </a>
     </div>
     <div class="booking-calendar">
       <iframe
-        src="https://www.google.com/calendar/embed?color=%239fe1e7&amp;embed_style=WyJhdDplbWI6c3QiLCIjZTBlMGUwIiwiI2VkZWRlZCIsIiM0MTg0ZjMiLCJyb2JvdG8iLCIjNjM2MzYzIiw1MDAsIiNmZmYiXQo&amp;eopt=0&amp;mode=month&amp;showCalendars=1&amp;showPrint=0&amp;showTitle=0&amp;showTz=0&amp;src=lepplaxbyf%40gmail.com"
+        src="{{ $calendarUrl }}{{ $langCode }}&src=lepplaxbyf%40gmail.com"
         title="{{ i18n "booking_calendar_title" }}"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
