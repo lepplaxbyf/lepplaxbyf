@@ -12,6 +12,12 @@ images = [
   "festsalen8.jpg",
   "festsalen9.jpg",
   "festsalen10.jpg",
+]
+
+[[sections]]
+heading = "gallery_tamburen"
+alt = "gallery_tamburen_alt"
+images = [
   "tamburen.jpg",
   "tamburen2.jpg",
   "tamburen3.jpg",

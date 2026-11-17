@@ -94,6 +94,12 @@ other = "Festsalen"
 [gallery_hall_alt]
 other = "Festsalen i Lepplax samlingshus med dukade bord och stolar"
 
+[gallery_tamburen]
+other = "Tamburen"
+
+[gallery_tamburen_alt]
+other = "Den ljusa tamburen i Lepplax samlingshus"
+
 [gallery_entrance]
 other = "Huvudingången"
 
@@ -107,16 +113,16 @@ other = "Köket"
 other = "Köket i Lepplax samlingshus"
 
 [gallery_kitchen_note]
-other = "Mat- och kaffeservis samt dukar finns för cirka 200 personer."
+other = "Mat- och kaffeservis samt dukar finns för cirka 160 personer."
 
 [gallery_upstairs]
-other = "Övervåningen"
+other = "Övre våningen"
 
 [gallery_upstairs_alt]
 other = "Rummen på samlingshusets övervåning"
 
 [gallery_upstairs_note]
-other = "Övervåningen har utrymme för 50 personer."
+other = "Övre våningen har utrymme för 50 personer."
 
 [gallery_surroundings]
 other = "Omgivningen"
@@ -131,7 +137,7 @@ other = "EN PLATS FÖR LIVETS FINA STUNDER"
 other = "Välkommen till Lepplax samlingshus."
 
 [hero_description]
-other = "Bröllop, födelsedag eller en kväll med hela föreningen? Lepplax samlingshus går att hyra för fest och gemenskap."
+other = "Bröllop, födelsedag eller en kväll med hela föreningen? Lepplax samlingshus går att hyra för fest och gemenskap under hela året."
 
 [hero_primary]
 other = "Bokningar & Kalender"
@@ -149,7 +155,7 @@ other = "Välkommen till Lepplax"
 other = "personers mat- och kaffeservis"
 
 [facts_capacity_value]
-other = "ca 200"
+other = "ca 160"
 
 [facts_upstairs_label]
 other = "platser på övre våningen"
@@ -170,19 +176,19 @@ other = "Här finns utrymme för både de stora festdagarna och de små stundern
 other = "Ett kök som är redo"
 
 [feature_kitchen_description]
-other = "Ett välutrustat kök med gott om arbetsyta. Mat- och kaffeservis samt dukar finns för cirka 200 personer."
+other = """Ett välutrustat kök med gott om arbetsyta. Mat- och kaffeservis för 160 personer. Stort kylrum, ugn, spis, kokgryta, diskmaskin, kaffekokare mm. Värmeplatta för att hålla maten varm. I nedre våningen finns två stora kylskåp och ett frysskåp."""
 
 [feature_gather_title]
 other = "Festsalen redo för fest"
 
 [feature_gather_description]
-other = "Den ljusa festsalen passar för bröllop, kalas och gemensamma måltider. Vita stolsöverdrag finns också."
+other = """Den ljusa festsalen passar för bröllop, fest, kalas och gemensamma måltider. Finns dukar, vita stolöverdrag, stor bildskärm, el-digitalpiano, ljudanläggning, mikrofoner, photoboth mm. Finns även möjlighet till kylning sommartid."""
 
 [feature_welcome_title]
 other = "Välkomnande för alla"
 
 [feature_welcome_description]
-other = "Lepplax samlingshus är handikappanpassat och välkomnar alla gäster."
+other = "Lepplax samlingshus är handikappanpassat och välkomnar alla gäster. Invaramp med separat ingång till festsalen och i tamburen finns inva-wc."
 
 [feature_kitchen_alt]
 other = "Köket i Lepplax samlingshus"

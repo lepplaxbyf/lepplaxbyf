@@ -94,6 +94,12 @@ other = "Juhlasali"
 [gallery_hall_alt]
 other = "Lepplaxin seurantalon juhlasali katettuine pöytineen ja tuoleineen"
 
+[gallery_tamburen]
+other = "Eteinen"
+
+[gallery_tamburen_alt]
+other = "Lepplaxin seurantalon valoisa eteinen"
+
 [gallery_entrance]
 other = "Pääsisäänkäynti"
 
@@ -107,7 +113,7 @@ other = "Keittiö"
 other = "Lepplaxin seurantalon keittiö"
 
 [gallery_kitchen_note]
-other = "Ruoka- ja kahviastiasto sekä pöytäliinat ovat noin 200 hengelle."
+other = "Ruoka- ja kahviastiasto sekä pöytäliinat ovat noin 160 hengelle."
 
 [gallery_upstairs]
 other = "Yläkerta"
@@ -131,7 +137,7 @@ other = "TILA ELÄMÄN TÄRKEILLE HETKILLE"
 other = "Tervetuloa Lepplaxin seurantalolle."
 
 [hero_description]
-other = "Häät, syntymäpäivät tai yhdistyksen yhteinen ilta? Lepplaxin seurantalon voi vuokrata juhlia ja yhdessäoloa varten."
+other = "Häät, syntymäpäivät tai yhdistyksen yhteinen ilta? Lepplaxin seurantalon voi vuokrata juhlia ja yhdessäoloa varten ympäri vuotta."
 
 [hero_primary]
 other = "Varaukset & kalenteri"
@@ -149,7 +155,7 @@ other = "Tervetuloa Lepplaxiin"
 other = "henkilön ruoka- ja kahviastiasto"
 
 [facts_capacity_value]
-other = "noin 200"
+other = "noin 160"
 
 [facts_upstairs_label]
 other = "paikkaa yläkerrassa"
@@ -170,19 +176,19 @@ other = "Täällä on tilaa niin elämän suurille juhlapäiville kuin pienille 
 other = "Keittiö on valmiina"
 
 [feature_kitchen_description]
-other = "Hyvin varusteltu keittiö, jossa on runsaasti työskentelytilaa. Ruoka- ja kahviastiasto sekä pöytäliinat noin 200 hengelle."
+other = """Hyvin varusteltu keittiö, jossa on runsaasti työskentelytilaa. Ruoka- ja kahviastiasto 160 hengelle. Suuri kylmähuone, uuni, liesi, keittopata, astianpesukone, kahvinkeittimen jne. Lämpölevy ruoan lämmitykseen. Alemmassa kerroksessa on kaksi suurta jääkaappia ja pakastin."""
 
 [feature_gather_title]
 other = "Juhlasali valmiina juhlaan"
 
 [feature_gather_description]
-other = "Valoisa juhlasali sopii häihin, juhliin ja yhteisiin aterioihin. Juhlasalissa on myös valkoisia tuolinpäällisiä."
+other = """Valoisa juhlasali sopii häihin, juhliin ja yhteisiin aterioihin. Salissa on liinavaatteet, valkoiset tuolinpäälliset, iso näyttö, el-digitalpiano, äänentoistolaitteet, mikrofonit, photobooth jne. Kesällä on myös jäähdytysmahdollisuus."""
 
 [feature_welcome_title]
 other = "Esteetön ja kutsuva"
 
 [feature_welcome_description]
-other = "Lepplaxin seurantalo on esteetön ja toivottaa kaikki vieraat tervetulleiksi."
+other = "Lepplaxin seurantalo on esteetön ja toivottaa kaikki vieraat tervetulleiksi. Pyörätuoliluiskalla on erillinen sisäänkäynti juhlasaliin ja tambuuri löytyy inva-wc."
 
 [feature_kitchen_alt]
 other = "Lepplaxin seurantalon keittiö"
