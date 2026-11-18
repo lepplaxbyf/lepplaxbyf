@@ -227,10 +227,7 @@ other = "YOUR NEXT GATHERING STARTS HERE"
 other = "Let's find the right day."
 
 [cta_description]
-other = "Bookings of Lepplax samlingshus are made by phone. Contact Gunborg to check available dates. For other questions, you can contact us on Facebook."
-
-[cta_button]
-other = "Contact us on Facebook"
+other = "Bookings are made by phone. Contact Gunborg to ask about available dates, and check the calendar for bookings and other events."
 
 [location_eyebrow]
 other = "FIND US"

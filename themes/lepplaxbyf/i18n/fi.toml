@@ -140,7 +140,7 @@ other = "TILA ELÄMÄN TÄRKEILLE HETKILLE"
 other = "Tervetuloa Lepplaxin seurantalolle."
 
 [hero_description]
-other = "Häät, syntymäpäivät tai yhdistyksen yhteinen ilta? Lepplaxin seurantalon voi vuokrata juhlia ja yhdessäoloa varten ympäri vuotta."
+other = "Häät, syntymäpäivät vai yhdistyksen yhteinen ilta? Lepplaxin seurantalon voi vuokrata juhliin ja yhdessäoloon ympäri vuoden."
 
 [hero_primary]
 other = "Varaukset & kalenteri"
@@ -227,10 +227,7 @@ other = "SEURAAVA TAPAHTUMANNE ALKAA TÄÄLTÄ"
 other = "Etsitään sopiva päivä."
 
 [cta_description]
-other = "Seurantalo varataan puhelimitse. Kysy Gunborgilta vapaita päiviä. Muissa kysymyksissä voit lähettää meille viestin Facebookissa."
-
-[cta_button]
-other = "Lähetä meille viesti Facebookissa"
+other = "Seurantalo varataan puhelimitse. Kysy Gunborgilta vapaita päiviä ja katso kalenterista varaukset sekä muut tapahtumat."
 
 [location_eyebrow]
 other = "LÖYDÄ PERILLE"
