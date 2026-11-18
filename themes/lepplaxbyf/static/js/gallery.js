@@ -8,6 +8,7 @@
   const prevButton = dialog.querySelector(".photo-lightbox-prev");
   const nextButton = dialog.querySelector(".photo-lightbox-next");
   if (!(lightboxImage instanceof HTMLImageElement) || !(closeButton instanceof HTMLButtonElement)) return;
+  const videoAutoplay = dialog.dataset.videoAutoplay === "true";
 
   // Collect all media items (both images and videos) in order
   const mediaItems = [];
@@ -37,17 +38,19 @@
   const show = (index) => {
     current = (index + mediaItems.length) % mediaItems.length;
     const item = mediaItems[current];
+    lightboxVideo.pause();
 
     if (item.type === "image") {
       lightboxImage.style.display = "block";
       lightboxVideo.style.display = "none";
+      lightboxVideo.removeAttribute("src");
       lightboxImage.src = item.src;
       lightboxImage.alt = item.alt;
     } else if (item.type === "video") {
       lightboxImage.style.display = "none";
       lightboxVideo.style.display = "block";
       lightboxVideo.src = item.src;
-      lightboxVideo.play();
+      if (videoAutoplay) lightboxVideo.play();
     }
   };
 
@@ -81,6 +84,10 @@
   });
 
   closeButton.addEventListener("click", () => dialog.close());
+  dialog.addEventListener("close", () => {
+    lightboxVideo.pause();
+    lightboxVideo.removeAttribute("src");
+  });
   
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) {

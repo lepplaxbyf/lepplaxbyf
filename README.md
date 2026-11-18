@@ -34,6 +34,7 @@ hugo               # build the site into public/
 - **Add a photo:** put the file in `static/images/` and add its filename to a section in `data/gallery.toml`.
 - **Change the page URLs:** the menu paths are set by `nav_booking_path` and `nav_gallery_path` in the i18n files, and the content folder names should match.
 - **Booking calendar:** the page embeds a Google Calendar (`lepplaxbyf@gmail.com`) in `layouts/booking/list.html`. Contact details are in the i18n files.
+- **Gallery videos:** set `params.gallery.videoAutoplay` in `hugo.toml` to `true` to autoplay videos when opened in the gallery lightbox; it defaults to `false`.
 
 ## Deployment (Cloudflare)
 

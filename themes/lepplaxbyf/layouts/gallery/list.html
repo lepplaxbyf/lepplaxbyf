@@ -52,7 +52,7 @@
     {{ end }}
   </div>
 
-  <dialog class="photo-lightbox" aria-label="{{ i18n "gallery_lightbox_label" }}">
+  <dialog class="photo-lightbox" aria-label="{{ i18n "gallery_lightbox_label" }}" data-video-autoplay="{{ site.Params.gallery.videoAutoplay }}">
     <button class="photo-lightbox-close" type="button" aria-label="{{ i18n "gallery_close_image" }}">×</button>
     <button class="photo-lightbox-nav photo-lightbox-prev" type="button" aria-label="{{ i18n "gallery_prev_image" }}">‹</button>
     <div class="photo-lightbox-container">
