@@ -31,6 +31,9 @@ other = "photos/"
 [language_switch]
 other = "English"
 
+[language_selector]
+other = "Choose language"
+
 [nav_contact]
 other = "Contact"
 

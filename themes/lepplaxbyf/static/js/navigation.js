@@ -27,11 +27,19 @@
     if (event.target instanceof Element && event.target.closest("a")) setExpanded(false);
   });
 
+  const languageMenu = navigation.querySelector(".language-select");
+
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") setExpanded(false);
+    if (event.key === "Escape") {
+      if (languageMenu instanceof HTMLDetailsElement) languageMenu.open = false;
+      setExpanded(false);
+    }
   });
 
   document.addEventListener("click", (event) => {
+    if (languageMenu instanceof HTMLDetailsElement && !languageMenu.contains(event.target)) {
+      languageMenu.open = false;
+    }
     if (!toggle.contains(event.target) && !navigation.contains(event.target)) setExpanded(false);
   });
 })();

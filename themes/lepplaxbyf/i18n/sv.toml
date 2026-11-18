@@ -31,6 +31,9 @@ other = "bilder/"
 [language_switch]
 other = "Suomeksi"
 
+[language_selector]
+other = "Välj språk"
+
 [nav_contact]
 other = "Kontakt"
 

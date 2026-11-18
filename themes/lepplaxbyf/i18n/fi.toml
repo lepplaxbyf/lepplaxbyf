@@ -31,6 +31,9 @@ other = "kuvat/"
 [language_switch]
 other = "På svenska"
 
+[language_selector]
+other = "Valitse kieli"
+
 [nav_contact]
 other = "Yhteystiedot"
 

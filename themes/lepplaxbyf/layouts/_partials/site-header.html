@@ -30,8 +30,15 @@
       <a href="{{ $bookingURL }}">{{ i18n "nav_booking" }}</a>
       <a href="{{ $galleryURL }}">{{ i18n "nav_gallery" }}</a>
       <a class="nav-contact" href="{{ .Site.Home.RelPermalink }}#contact">{{ i18n "nav_contact" }}</a>
-      {{ range .Translations }}
-        <a class="language-link" href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}" title="{{ .Language.Label }}">{{ .Language.Label }}</a>
+      {{ with .Translations }}
+        <details class="language-select">
+          <summary aria-label="{{ i18n "language_selector" }}: {{ $.Language.Label }}">{{ $.Language.Label }}</summary>
+          <div class="language-options">
+            {{ range . }}
+              <a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
+            {{ end }}
+          </div>
+        </details>
       {{ end }}
     </nav>
   </div>

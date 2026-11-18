@@ -106,10 +106,76 @@ body > main {
   opacity: 0.65;
 }
 
-.main-nav .language-link {
-  padding: 10px 14px;
+.language-select {
+  position: relative;
+}
+
+.language-select summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 9px 12px;
   border: 1px solid rgba(35, 61, 50, 0.26);
   border-radius: 2px;
+  background-color: transparent;
+  color: var(--forest);
+  font: inherit;
+  font-size: 13px;
+  list-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.language-select summary::-webkit-details-marker {
+  display: none;
+}
+
+.language-select summary::after {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  content: "";
+  transform: rotate(45deg);
+  transition: transform 160ms ease;
+}
+
+.language-select[open] summary::after {
+  transform: rotate(225deg);
+}
+
+.language-select summary:focus-visible,
+.language-options a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.language-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 20;
+  display: grid;
+  min-width: 100%;
+  padding: 4px;
+  border: 1px solid rgba(35, 61, 50, 0.26);
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.main-nav .language-options a {
+  padding: 8px 10px;
+  border: 0;
+  color: var(--forest);
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-nav .language-options a:hover {
+  background: #f2e6cd;
+  opacity: 1;
 }
 
 .main-nav .nav-contact {
@@ -977,10 +1043,6 @@ body > main {
     font-size: 10px;
   }
 
-  .main-nav .language-link {
-    padding: 7px 8px;
-  }
-
   .main-nav .nav-contact {
     padding: 7px 8px;
   }
@@ -1442,10 +1504,20 @@ body > main {
     border-bottom: 0;
   }
 
-  .main-nav .language-link {
-    width: fit-content;
+  .language-select {
+    align-self: flex-start;
     margin-top: 10px;
+  }
+
+  .language-select summary {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .main-nav .language-options a {
     padding: 10px 12px;
+    font-size: 16px;
   }
 }
 
