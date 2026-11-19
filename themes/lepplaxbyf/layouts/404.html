@@ -14,6 +14,7 @@
       const language = window.location.pathname.split("/")[1]?.toLowerCase();
       if (!["fi", "en"].includes(language)) return;
       if (window.location.pathname.toLowerCase() === `/${language}/404.html`) return;
+      if (document.documentElement.lang === language) return;
 
       const localizedUrl = `/${language}/404.html`;
       fetch(localizedUrl)
