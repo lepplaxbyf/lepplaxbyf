@@ -137,7 +137,7 @@ other = "Lepplaxin seurantalo, piha ja ympäristö"
 other = "TILA ELÄMÄN TÄRKEILLE HETKILLE"
 
 [hero_title]
-other = "Tervetuloa Lepplaxin seurantalolle."
+other = "Tervetuloa Lepplaxin seurantalolle"
 
 [hero_description]
 other = "Häät, syntymäpäivät vai yhdistyksen yhteinen ilta? Lepplaxin seurantalon voi vuokrata juhliin ja yhdessäoloon ympäri vuoden."
@@ -170,7 +170,7 @@ other = "esteetön tila"
 other = "YHDESSÄOLOON JA JUHLAAN"
 
 [about_title]
-other = "Tilaa kaikelle, mitä haluatte juhlia."
+other = "Tilaa kaikelle, mitä haluatte juhlia"
 
 [about_description]
 other = "Täällä on tilaa niin elämän suurille juhlapäiville kuin pienille yhteisille hetkille. Talo odottaa täyttyvänsä ihmisistä, keskusteluista ja muistoista."
@@ -206,7 +206,7 @@ other = "Kukkia ja tervetulokyltti Lepplaxin seurantalon sisäänkäynnillä"
 other = "PIENI KURKISTUS"
 
 [gallery_title]
-other = "Kuvitelkaa juhlanne täällä."
+other = "Kuvitelkaa juhlanne täällä"
 
 [gallery_description]
 other = "Valoisat huoneet, katetut pöydät ja ympäristö, jossa vieraat viihtyvät."
@@ -224,7 +224,7 @@ other = "Lepplaxin seurantalon valoisa eteinen"
 other = "SEURAAVA TAPAHTUMANNE ALKAA TÄÄLTÄ"
 
 [cta_title]
-other = "Etsitään sopiva päivä."
+other = "Etsitään sopiva päivä"
 
 [cta_description]
 other = "Seurantalo varataan puhelimitse. Kysy Gunborgilta vapaita päiviä ja katso kalenterista varaukset sekä muut tapahtumat."
@@ -233,7 +233,7 @@ other = "Seurantalo varataan puhelimitse. Kysy Gunborgilta vapaita päiviä ja k
 other = "LÖYDÄ PERILLE"
 
 [location_title]
-other = "Lepplaxissa tavataan."
+other = "Lepplaxissa tavataan"
 
 [location_link]
 other = "Avaa Google Mapsissa"
