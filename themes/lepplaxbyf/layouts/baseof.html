@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="{{ "css/reset.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
     <link rel="canonical" href="{{ .Permalink }}">
+    {{ range .AllTranslations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{ end }}
     {{ with .OutputFormats.Get "RSS" }}
       <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
     {{ end }}
