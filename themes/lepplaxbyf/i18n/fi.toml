@@ -10,6 +10,15 @@ other = "Sulje valikko"
 [brand_label]
 other = "Lepplax byaförening rf"
 
+[not_found_title]
+other = "Sivua ei löytynyt"
+
+[not_found_description]
+other = "Etsimääsi sivua ei ole tai se on siirretty. Tarkista osoite tai palaa etusivulle."
+
+[not_found_home]
+other = "Etusivulle"
+
 [nav_about]
 other = "Etusivu"
 

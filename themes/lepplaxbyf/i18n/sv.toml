@@ -10,6 +10,15 @@ other = "Stäng menyn"
 [brand_label]
 other = "Lepplax byaförening rf"
 
+[not_found_title]
+other = "Sidan hittades inte"
+
+[not_found_description]
+other = "Sidan du söker finns inte eller har flyttats. Kontrollera adressen eller gå tillbaka till startsidan."
+
+[not_found_home]
+other = "Till startsidan"
+
 [nav_about]
 other = "Framsida"
 

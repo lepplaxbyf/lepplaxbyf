@@ -35,7 +35,7 @@
           <summary aria-label="{{ i18n "language_selector" }}: {{ $.Language.Label }}">{{ $.Language.Label }}</summary>
           <div class="language-options">
             {{ range . }}
-              <a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
+              <a href="{{ if eq $.Kind "404" }}{{ .Site.Home.RelPermalink }}{{ else }}{{ .RelPermalink }}{{ end }}" lang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
             {{ end }}
           </div>
         </details>

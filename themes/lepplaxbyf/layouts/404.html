@@ -1,6 +1,43 @@
+{{ define "title" }}{{ i18n "not_found_title" }} | {{ partial "site-title.html" . }}{{ end }}
+
 {{ define "main" }}
-  <section class="subpage-hero section-wrap">
-    <h1>404</h1>
-    <p><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a></p>
+  <section class="subpage-hero section-wrap not-found">
+    <p class="eyebrow"><span class="eyebrow-line"></span>404</p>
+    <h1>{{ i18n "not_found_title" }}</h1>
+    <p class="not-found-description">{{ i18n "not_found_description" }}</p>
+    <div class="hero-actions not-found-actions">
+      <a class="button button-primary" href="{{ .Site.Home.RelPermalink }}">{{ i18n "not_found_home" }}</a>
+    </div>
   </section>
+  <script>
+    (() => {
+      const language = window.location.pathname.split("/")[1]?.toLowerCase();
+      if (!["fi", "en"].includes(language)) return;
+      if (window.location.pathname.toLowerCase() === `/${language}/404.html`) return;
+
+      const localizedUrl = `/${language}/404.html`;
+      fetch(localizedUrl)
+        .then((response) => {
+          if (!response.ok) throw new Error(`Localized 404 returned HTTP ${response.status}.`);
+          return response.text();
+        })
+        .then((html) => {
+          const localizedDocument = new DOMParser().parseFromString(html, "text/html");
+          if (localizedDocument.documentElement.lang !== language) {
+            throw new Error(`Localized 404 has unexpected language: ${localizedDocument.documentElement.lang}.`);
+          }
+
+          document.documentElement.lang = localizedDocument.documentElement.lang;
+          document.title = localizedDocument.title;
+          document.body.innerHTML = localizedDocument.body.innerHTML;
+
+          for (const originalScript of localizedDocument.body.querySelectorAll("script[src]")) {
+            const script = document.createElement("script");
+            script.src = new URL(originalScript.getAttribute("src"), `${window.location.origin}${localizedUrl}`);
+            document.body.append(script);
+          }
+        })
+        .catch((error) => console.error("Could not load the localized 404 page.", error));
+    })();
+  </script>
 {{ end }}

@@ -10,6 +10,15 @@ other = "Close menu"
 [brand_label]
 other = "Lepplax byaförening rf"
 
+[not_found_title]
+other = "Page not found"
+
+[not_found_description]
+other = "The page you are looking for does not exist or has moved. Check the address or return to the homepage."
+
+[not_found_home]
+other = "Back to homepage"
+
 [nav_about]
 other = "Home"
 
