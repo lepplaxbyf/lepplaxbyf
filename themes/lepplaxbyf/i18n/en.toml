@@ -20,13 +20,13 @@ other = "Facilities"
 other = "Bookings & Calendar"
 
 [nav_booking_path]
-other = "bookings/"
+other = "en/samlingshus/bookings/"
 
 [nav_gallery]
 other = "Photos"
 
 [nav_gallery_path]
-other = "photos/"
+other = "en/samlingshus/photos/"
 
 [language_switch]
 other = "English"

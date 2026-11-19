@@ -20,13 +20,13 @@ other = "Tilat"
 other = "Varaukset & kalenteri"
 
 [nav_booking_path]
-other = "varaukset/"
+other = "fi/seurantalo/varaukset/"
 
 [nav_gallery]
 other = "Kuvat"
 
 [nav_gallery_path]
-other = "kuvat/"
+other = "fi/seurantalo/kuvat/"
 
 [language_switch]
 other = "På svenska"

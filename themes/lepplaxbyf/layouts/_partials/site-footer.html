@@ -8,8 +8,8 @@
       <span class="footer-contact-label">{{ i18n "footer_sitemap" }}</span>
       <ul>
         <li><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "nav_about" }}</a></li>
-        <li><a href="{{ i18n "nav_booking_path" | relLangURL }}">{{ i18n "nav_booking" }}</a></li>
-        <li><a href="{{ i18n "nav_gallery_path" | relLangURL }}">{{ i18n "nav_gallery" }}</a></li>
+        <li><a href="{{ i18n "nav_booking_path" | relURL }}">{{ i18n "nav_booking" }}</a></li>
+        <li><a href="{{ i18n "nav_gallery_path" | relURL }}">{{ i18n "nav_gallery" }}</a></li>
         <li><a href="{{ .Site.Home.RelPermalink }}#contact">{{ i18n "nav_contact" }}</a></li>
         <li><a href="{{ .Site.Home.RelPermalink }}#location">{{ i18n "nav_location" }}</a></li>
       </ul>

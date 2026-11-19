@@ -19,8 +19,8 @@
             {{ range .media }}
               {{ if eq .type "image" }}
                 <figure class="photo-card">
-                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ printf "images/%s" .file | relURL }}">
-                    <img src="{{ printf "images/%s" .file | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
+                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ printf "media/samlingshus/images/%s" .file | relURL }}">
+                    <img src="{{ printf "media/samlingshus/images/%s" .file | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
                   </button>
                 </figure>
               {{ end }}
@@ -30,7 +30,7 @@
             {{ range .media }}
               {{ if eq .type "video" }}
                 <figure class="photo-card">
-                  <video src="{{ printf "videos/%s" .file | relURL }}" controls preload="metadata" class="gallery-video" data-media-type="video" data-media-src="{{ printf "videos/%s" .file | relURL }}"></video>
+                  <video src="{{ printf "media/samlingshus/videos/%s" .file | relURL }}" controls preload="metadata" class="gallery-video" data-media-type="video" data-media-src="{{ printf "media/samlingshus/videos/%s" .file | relURL }}"></video>
                 </figure>
               {{ end }}
             {{ end }}
@@ -40,8 +40,8 @@
             {{ range .media }}
               {{ if eq .type "image" }}
                 <figure class="photo-card">
-                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ printf "images/%s" .file | relURL }}">
-                    <img src="{{ printf "images/%s" .file | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
+                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ printf "media/samlingshus/images/%s" .file | relURL }}">
+                    <img src="{{ printf "media/samlingshus/images/%s" .file | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
                   </button>
                 </figure>
               {{ end }}

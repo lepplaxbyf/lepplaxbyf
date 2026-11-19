@@ -20,13 +20,13 @@ other = "Utrymmen"
 other = "Bokningar & Kalender"
 
 [nav_booking_path]
-other = "bokningar/"
+other = "samlingshus/bokningar/"
 
 [nav_gallery]
 other = "Bilder"
 
 [nav_gallery_path]
-other = "bilder/"
+other = "samlingshus/bilder/"
 
 [language_switch]
 other = "Suomeksi"

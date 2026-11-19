@@ -1,5 +1,5 @@
-{{ $bookingURL := i18n "nav_booking_path" | relLangURL }}
-{{ $galleryURL := i18n "nav_gallery_path" | relLangURL }}
+{{ $bookingURL := i18n "nav_booking_path" | relURL }}
+{{ $galleryURL := i18n "nav_gallery_path" | relURL }}
 <header class="site-header" id="top">
   <div class="site-header-inner">
     <a class="wordmark" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
