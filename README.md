@@ -34,6 +34,7 @@ hugo               # build the site into public/
 
 - **Edit text:** change the strings in `themes/lepplaxbyf/i18n/sv.toml` and `fi.toml`. Keep both files in sync.
 - **Add a photo:** put the file in `assets/media/samlingshus/images/` and add its filename to a section in `data/gallery.toml`. Hugo automatically generates responsive WebP previews and a smaller JPEG fallback; the original is used in the lightbox.
+- **Share preview:** set `featured_image` in a page's front matter to choose its Open Graph and Twitter preview image; pages without one use the landing-page photo.
 - **Change the page URLs:** the menu paths are set by `nav_booking_path` and `nav_gallery_path` in the i18n files. Each localized page's `url` and `aliases` front matter set its output path and legacy redirects.
 - **Booking calendar:** the page embeds a Google Calendar (`lepplaxbyf@gmail.com`) in `layouts/booking/list.html`. Contact details are in the i18n files.
 - **Gallery videos:** set `params.gallery.videoAutoplay` in `hugo.toml` to `true` to autoplay videos when opened in the gallery lightbox; it defaults to `false`.

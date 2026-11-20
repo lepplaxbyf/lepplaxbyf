@@ -4,7 +4,29 @@
     <meta charset="utf-8">
     <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ partial "site-title.html" . }}{{ end }}</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }} {{ i18n "meta_owner" }}">
+    {{- $description := .Description | default site.Params.description -}}
+    {{- $socialTitle := printf "%s | %s" .Title (partial "site-title.html" .) -}}
+    {{- $socialImagePath := .Params.featured_image | default "media/samlingshus/images/lepplax-samlingshus.jpg" -}}
+    <meta name="description" content="{{ $description }} {{ i18n "meta_owner" }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ partial "site-title.html" . }}">
+    <meta property="og:title" content="{{ $socialTitle }}">
+    <meta property="og:description" content="{{ $description }} {{ i18n "meta_owner" }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $socialTitle }}">
+    <meta name="twitter:description" content="{{ $description }} {{ i18n "meta_owner" }}">
+    {{- with resources.Get $socialImagePath -}}
+      {{- $socialImage := .Resize "1200x jpg q84" -}}
+      <meta property="og:image" content="{{ $socialImage.Permalink }}">
+      <meta property="og:image:type" content="image/jpeg">
+      <meta property="og:image:width" content="{{ $socialImage.Width }}">
+      <meta property="og:image:height" content="{{ $socialImage.Height }}">
+      <meta property="og:image:alt" content="{{ i18n "hero_image_alt" }}">
+      <meta name="twitter:image" content="{{ $socialImage.Permalink }}">
+    {{- else -}}
+      {{- errorf "Social share image resource %q not found for %s" $socialImagePath .RelPermalink -}}
+    {{- end -}}
     {{ hugo.Generator }}
     {{ if and hugo.IsProduction (not .Params.private) (ne .Kind "404") }}
       <meta name="robots" content="index, follow">
