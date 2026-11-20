@@ -1,0 +1,35 @@
+{{- $image := .image -}}
+{{- if and (not $image) .src -}}
+  {{- $image = resources.Get .src -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- errorf "Image resource %q not found" .src -}}
+{{- else -}}
+  {{- $widths := .widths | default (slice 480 960) -}}
+  {{- $webpSrcset := slice -}}
+  {{- range $width := $widths -}}
+    {{- if le $width $image.Width -}}
+      {{- $webp := $image.Resize (printf "%dx webp q80" $width) -}}
+      {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $webp.RelPermalink $webp.Width) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $webpSrcset -}}
+    {{- $webp := $image.Resize (printf "%dx webp q80" $image.Width) -}}
+    {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $webp.RelPermalink $webp.Width) -}}
+  {{- end -}}
+  {{- $fallbackWidth := .fallbackWidth | default 960 -}}
+  {{- if gt $fallbackWidth $image.Width -}}
+    {{- $fallbackWidth = $image.Width -}}
+  {{- end -}}
+  {{- $fallback := $image.Resize (printf "%dx jpg q84" $fallbackWidth) -}}
+<picture class="responsive-image">
+  <source type="image/webp" srcset="{{ delimit $webpSrcset ", " }}" sizes="{{ default "100vw" .sizes }}">
+  <img
+    src="{{ $fallback.RelPermalink }}"
+    alt="{{ .alt }}"
+    width="{{ $image.Width }}"
+    height="{{ $image.Height }}"
+    loading="{{ default "lazy" .loading }}"
+    decoding="async"{{ with .fetchpriority }} fetchpriority="{{ . }}"{{ end }}>
+</picture>
+{{- end -}}

@@ -21,18 +21,19 @@ hugo               # build the site into public/
 | `hugo.toml` | Site config and language setup |
 | `content/` | Swedish pages (`bokningar`, `bilder`, home) |
 | `content_fi/` | Finnish pages (`kalenteri`, `kuvat`, home) |
-| `static/media/samlingshus/images/` | Photos for Lepplax samlingshus |
+| `assets/media/samlingshus/images/` | Source photos processed by Hugo |
+| `assets/js/gallery.js` | Gallery lightbox script fingerprinted by Hugo |
 | `static/media/samlingshus/videos/` | Videos for Lepplax samlingshus |
 | `data/gallery.toml` | Which images appear in which gallery section |
 | `themes/lepplaxbyf/` | The site's own theme, with everything below |
 | `themes/lepplaxbyf/layouts/` | Templates: `baseof.html`, `home.html`, `booking/`, `gallery/`, `_partials/` (header and footer) |
 | `themes/lepplaxbyf/i18n/` | All UI text, in `sv.toml` and `fi.toml` |
-| `themes/lepplaxbyf/static/` | CSS (`css/site.css`) and the gallery lightbox script (`js/gallery.js`) |
+| `themes/lepplaxbyf/static/` | CSS (`css/site.css`) and navigation script (`js/navigation.js`) |
 
 ## Common tasks
 
 - **Edit text:** change the strings in `themes/lepplaxbyf/i18n/sv.toml` and `fi.toml`. Keep both files in sync.
-- **Add a photo:** put the file in `static/media/samlingshus/images/` and add its filename to a section in `data/gallery.toml`.
+- **Add a photo:** put the file in `assets/media/samlingshus/images/` and add its filename to a section in `data/gallery.toml`. Hugo automatically generates responsive WebP previews and a smaller JPEG fallback; the original is used in the lightbox.
 - **Change the page URLs:** the menu paths are set by `nav_booking_path` and `nav_gallery_path` in the i18n files. Each localized page's `url` and `aliases` front matter set its output path and legacy redirects.
 - **Booking calendar:** the page embeds a Google Calendar (`lepplaxbyf@gmail.com`) in `layouts/booking/list.html`. Contact details are in the i18n files.
 - **Gallery videos:** set `params.gallery.videoAutoplay` in `hugo.toml` to `true` to autoplay videos when opened in the gallery lightbox; it defaults to `false`.

@@ -17,9 +17,10 @@
     const video = card.querySelector("video");
     
     if (img) {
+      const fullSizeImage = card.querySelector(".photo-open")?.dataset.mediaSrc;
       mediaItems.push({
         type: "image",
-        src: img.currentSrc || img.src,
+        src: fullSizeImage || img.currentSrc || img.src,
         alt: img.alt,
         cardIndex: cardIndex,
       });

@@ -18,9 +18,12 @@
           <div class="photo-grid">
             {{ range .media }}
               {{ if eq .type "image" }}
+                {{ $imagePath := printf "media/samlingshus/images/%s" .file }}
+                {{ $image := resources.Get $imagePath }}
+                {{ if not $image }}{{ errorf "Gallery image resource %q not found" $imagePath }}{{ end }}
                 <figure class="photo-card">
-                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ printf "media/samlingshus/images/%s" .file | relURL }}">
-                    <img src="{{ printf "media/samlingshus/images/%s" .file | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
+                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ $image.RelPermalink }}">
+                    {{ partial "responsive-image.html" (dict "image" $image "alt" (i18n $altKey) "sizes" "(max-width: 640px) 90vw, (max-width: 900px) 45vw, 33vw") }}
                   </button>
                 </figure>
               {{ end }}
@@ -39,9 +42,12 @@
           <div class="photo-grid">
             {{ range .media }}
               {{ if eq .type "image" }}
+                {{ $imagePath := printf "media/samlingshus/images/%s" .file }}
+                {{ $image := resources.Get $imagePath }}
+                {{ if not $image }}{{ errorf "Gallery image resource %q not found" $imagePath }}{{ end }}
                 <figure class="photo-card">
-                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ printf "media/samlingshus/images/%s" .file | relURL }}">
-                    <img src="{{ printf "media/samlingshus/images/%s" .file | relURL }}" alt="{{ i18n $altKey }}" loading="lazy">
+                  <button class="photo-open" type="button" aria-label="{{ i18n "gallery_open_image" }}" data-media-type="image" data-media-src="{{ $image.RelPermalink }}">
+                    {{ partial "responsive-image.html" (dict "image" $image "alt" (i18n $altKey) "sizes" "(max-width: 640px) 90vw, (max-width: 900px) 45vw, 33vw") }}
                   </button>
                 </figure>
               {{ end }}
@@ -61,5 +67,6 @@
     </div>
     <button class="photo-lightbox-nav photo-lightbox-next" type="button" aria-label="{{ i18n "gallery_next_image" }}">›</button>
   </dialog>
-  <script src="{{ "js/gallery.js" | relURL }}" defer></script>
+  {{ $galleryScript := resources.Get "js/gallery.js" | minify | fingerprint }}
+  <script src="{{ $galleryScript.RelPermalink }}" integrity="{{ $galleryScript.Data.Integrity }}" defer></script>
 {{ end }}
